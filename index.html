@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SUTHERSONR - Computer Science Engineering Student & Software Developer at KSR Institute For Engineering And Technology" />
+  <meta name="keywords" content="SUTHERSONR, CSE, Portfolio, Software Developer, Java, DSA, KSR Institute" />
+  <meta name="author" content="SUTHERSONR" />
+  <title>SUTHERSON R | CSE Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Scroll Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== LOADER ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-text">SR<span class="accent">.</span></span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">SUTHERSON<span class="accent"> R</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#certificates" class="nav-link">Certs</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge" data-aos="fade-down" data-aos-delay="200">
+          <span class="badge-dot"></span> Open to Opportunities
+        </div>
+        <h1 class="hero-name" data-aos="fade-up" data-aos-delay="300">
+          SUTHERSON<span class="accent"></span>
+        </h1>
+        <div class="hero-title" data-aos="fade-up" data-aos-delay="450">
+          <span class="title-static">I'm a </span>
+          <span class="typed-wrapper">
+            <span class="typed-text" id="typedText"></span>
+            <span class="typed-cursor">|</span>
+          </span>
+        </div>
+        <p class="hero-tagline" data-aos="fade-up" data-aos-delay="550">
+          Building efficient, scalable, and intelligent solutions —<br>
+          one line of code at a time.
+        </p>
+        <div class="hero-btns" data-aos="fade-up" data-aos-delay="650">
+          <a href="assets/SUTHERSON_Resume.pdf" class="btn btn-primary" download="SUTHERSON_Resume.pdf">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            <i class="fas fa-code"></i> View Projects
+          </a>
+        </div>
+        <div class="hero-socials" data-aos="fade-up" data-aos-delay="750">
+          <a href="https://www.linkedin.com/in/sutherson-r/" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Suther2005" target="_blank" class="social-icon" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/call_me_sutherson" target="_blank" class="social-icon" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:rsutherson800@gmail.com" class="social-icon" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-area" data-aos="zoom-in" data-aos-delay="400">
+        <div class="hero-img-wrapper">
+          <div class="img-ring ring-1"></div>
+          <div class="img-ring ring-2"></div>
+          <div class="hero-img-frame">
+            <div class="profile-placeholder">
+              <span class="placeholder-glow"></span>
+              <span class="placeholder-initials"><span>S</span><span>R</span></span>
+              <span class="placeholder-sub">CSE</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-java">
+            <i class="fab fa-java"></i> Java
+          </div>
+          <div class="floating-badge badge-react">
+            <i class="fab fa-react"></i> React
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="900">
+      <span>Scroll Down</span>
+      <div class="scroll-line"><div class="scroll-dot"></div></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Who Am I</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual" data-aos="fade-right" data-aos-delay="200">
+          <div class="about-card-img">
+            <img src="assets/profile.jpeg" alt="SUTHERSONR Profile" class="profile-photo large">
+          </div>
+          <div class="about-stats">
+            <div class="stat-item" data-aos="flip-up" data-aos-delay="300">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item" data-aos="flip-up" data-aos-delay="400">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item" data-aos="flip-up" data-aos-delay="500">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Internships</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left" data-aos-delay="200">
+          <h3 class="about-greeting">Hello! I'm <span class="accent">SUTHERSONR</span></h3>
+          <p class="about-para">
+            A passionate 3rd-year Computer Science Engineering student at <strong>KSR Institute For Engineering And Technology</strong>, driven by an obsession with writing clean, purposeful code that solves real-world problems.
+          </p>
+          <p class="about-para">
+            My journey in tech has taken me through Java, data structures, deep learning, and web development. I believe that great software isn't just about functionality — it's about elegance, performance, and impact. Whether it's building a placement-ready application or a deep learning crop monitoring system, I bring structured thinking and relentless iteration to every project.
+          </p>
+          <p class="about-para">
+            Currently preparing for campus placements, I'm honing my aptitude, Java, and DSA skills while actively building projects that align with industry standards. My goal: to land a software engineering role where I can grow, contribute, and keep shipping meaningful work.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label"><i class="fas fa-graduation-cap"></i> College</span>
+              <span class="info-value">KSR Institute For Engineering And Technology</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span>
+              <span class="info-value">Tamil Nadu, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fas fa-code"></i> Department</span>
+              <span class="info-value">Computer Science Engineering</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fas fa-briefcase"></i> Status</span>
+              <span class="info-value">Open to Internships & Placements</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-20">
+            <i class="fas fa-paper-plane"></i> Let's Connect
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">What I Know</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+      <div class="skills-categories" data-aos="fade-up" data-aos-delay="100">
+        <button class="skill-cat-btn active" data-cat="all">All</button>
+        <button class="skill-cat-btn" data-cat="languages">Languages</button>
+        <button class="skill-cat-btn" data-cat="web">Web</button>
+        <button class="skill-cat-btn" data-cat="tools">Tools</button>
+        <button class="skill-cat-btn" data-cat="core">Core CS</button>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Languages -->
+        <div class="skill-card" data-cat="languages" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-icon"><i class="fab fa-java"></i></div>
+          <h4 class="skill-name">Java</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          <span class="skill-pct">70%</span>
+        </div>
+
+        <!-- Web -->
+        <div class="skill-card" data-cat="web" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <h4 class="skill-name">HTML5</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-card" data-cat="web" data-aos="fade-up" data-aos-delay="150">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <h4 class="skill-name">CSS3</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-card" data-cat="web" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <h4 class="skill-name">JavaScript</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+          <span class="skill-pct">50%</span>
+        </div>
+
+
+        <!-- Tools -->
+        <div class="skill-card" data-cat="tools" data-aos="fade-up" data-aos-delay="150">
+          <div class="skill-icon"><i class="fab fa-github"></i></div>
+          <h4 class="skill-name">GitHub</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-card" data-cat="tools" data-aos="fade-up" data-aos-delay="100">
+<div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+<h4 class="skill-name">Power BI</h4>
+<div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+<span class="skill-pct">85%</span>
+</div>
+        <div class="skill-card" data-cat="tools" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+          <h4 class="skill-name">VS Code</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+
+        <!-- Core CS -->
+        <div class="skill-card" data-cat="core" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+          <h4 class="skill-name">Data Structures</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-card" data-cat="core" data-aos="fade-up" data-aos-delay="150">
+          <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+          <h4 class="skill-name">OOP</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-card" data-cat="core" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h4 class="skill-name">DBMS</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Work History</span>
+        <h2 class="section-title">My <span class="accent">Experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+          <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Data Analytics Intern</h3>
+                <p class="tl-company"><i class="fas fa-building"></i> GWC Data.Ai </p>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-date"><i class="fas fa-calendar"></i> Jun 2024 – jul 2024</span>
+                <span class="tl-location"><i class="fas fa-map-pin"></i> Hosur, Tamil Nadu</span>
+              </div>
+            </div>
+            <ul class="tl-points">
+  <li>Analyzed structured datasets to identify trends and actionable insights.</li>
+  <li>Prepared analytical reports to support business decision-making.</li>
+  <li>Worked with Excel, SQL, and Python for data cleaning and processing.</li>
+  <li>Built and evaluated machine learning models using real-world datasets.</li>
+</ul>
+
+<div class="tl-tags">
+  <span class="tl-tag">Python</span>
+  <span class="tl-tag">SQL</span>
+  <span class="tl-tag">Excel</span>
+  <span class="tl-tag">Power BI</span>
+</div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+          <div class="timeline-dot"><i class="fas fa-laptop-code"></i></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">AI & ML Intern</h3>
+                <p class="tl-company"><i class="fas fa-building"></i> Edunet Foundation – AICTE – IBM SkillsBuild </p>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-date"><i class="fas fa-calendar"></i> Jan 2025 – Mar 2025</span>
+                <span class="tl-location"><i class="fas fa-map-pin"></i> online </span>
+              </div>
+            </div>
+            <ul class="tl-points">
+  <li>Built and evaluated machine learning models using real-world datasets.</li>
+  <li>Performed data preprocessing, cleaning, and feature engineering.</li>
+  <li>Applied validation techniques to improve model accuracy and performance.</li>
+  <li>Worked on end-to-end ML workflow from data preparation to model evaluation.</li>
+</ul>
+
+<div class="tl-tags">
+  <span class="tl-tag">Python</span>
+  <span class="tl-tag">Machine Learning</span>
+  <span class="tl-tag">Data Preprocessing</span>
+  <span class="tl-tag">Model Evaluation</span>
+</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">What I Built</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-img">
+            <div class="project-thumb thumb-1">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="overlay-btn ghost"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">01</div>
+            <h3 class="project-title">Turmeric Crop Health Monitor</h3>
+            <p class="project-desc">
+              A dual-module deep learning system for soil suitability classification (Random Forest) and disease detection (YOLOv8 + CBAM + Swin Transformer) with HSV analysis. Targets 91%+ mAP for turmeric farming.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>YOLOv8</span><span>CBAM</span><span>Swin Transformer</span><span>Random Forest</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card featured" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-img">
+            <div class="project-thumb thumb-2">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="overlay-btn ghost"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">02</div>
+            <h3 class="project-title">Student Management System</h3>
+            <p class="project-desc">
+              A full-stack web application for managing student records, attendance, marks, and performance analytics. Features JWT authentication, real-time updates, and an intuitive admin dashboard.
+            </p>
+            <div class="project-tech">
+              <span>Java</span><span>Spring Boot</span><span>React</span><span>MySQL</span><span>JWT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-img">
+            <div class="project-thumb thumb-3">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="overlay-btn ghost"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">03</div>
+            <h3 class="project-title">Placement Prep Tracker</h3>
+            <p class="project-desc">
+              A smart placement preparation dashboard that tracks DSA problems, aptitude progress, and interview rounds. Includes study scheduler, topic analytics, and company-wise preparation checklists.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>LocalStorage</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-cta" data-aos="fade-up">
+        <a href="https://github.com" target="_blank" class="btn btn-outline">
+          <i class="fab fa-github"></i> View All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Academic Background</span>
+        <h2 class="section-title">My <span class="accent">Education</span></h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-badge">Current</div>
+          <h3 class="edu-degree">B.E. Computer Science Engineering</h3>
+          <p class="edu-institution">KSR Institute For Engineering And Technology</p>
+          <p class="edu-location"><i class="fas fa-map-pin"></i> Tiruchengode, Tamil Nadu</p>
+          <div class="edu-meta">
+            <span><i class="fas fa-calendar"></i> 2023 – 2027</span>
+            <span class="edu-score"><i class="fas fa-star"></i> CGPA: 8.09 / 10</span>
+          </div>
+          <div class="edu-progress-bar">
+            <div class="edu-progress-fill" data-width="82"></div>
+          </div>
+        </div>
+
+        <div class="edu-card" data-aos="flip-left" data-aos-delay="200">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <h3 class="edu-degree">Higher Secondary (12th Grade)</h3>
+          <p class="edu-institution">Jayarrajesh Matric.Hr.Sec.School</p>
+          <p class="edu-location"><i class="fas fa-map-pin"></i> Thisaiyanvilai,Tamil Nadu</p>
+          <div class="edu-meta">
+            <span><i class="fas fa-calendar"></i> Completed 2023</span>
+            <span class="edu-score"><i class="fas fa-star"></i> 83%</span>
+          </div>
+          <p class="edu-board"><i class="fas fa-award"></i> State Board (Tamil Nadu)</p>
+          <div class="edu-progress-bar">
+            <div class="edu-progress-fill" data-width="87"></div>
+          </div>
+        </div>
+
+        <div class="edu-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+          <h3 class="edu-degree">SSLC (10th Grade)</h3>
+          <p class="edu-institution">Jayarrajesh Matric.Hr.Sec.School</p>
+          <p class="edu-location"><i class="fas fa-map-pin"></i> Thisaiyanvilai, Tamil Nadu</p>
+          <div class="edu-meta">
+            <span><i class="fas fa-calendar"></i> Completed 2021</span>
+            <span class="edu-score"><i class="fas fa-star"></i> All Pass </span>
+          </div>
+          <p class="edu-board"><i class="fas fa-award"></i> State Board (Tamil Nadu)</p>
+          <div class="edu-progress-bar">
+            <div class="edu-progress-fill" data-width="91"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES SECTION ===== -->
+  <section class="section certificates" id="certificates">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Achievements</span>
+        <h2 class="section-title">My <span class="accent">Certificates</span></h2>
+      </div>
+      <div class="certs-grid">
+
+<div class="cert-card" data-aos="zoom-in" data-aos-delay="100" onclick="openModal('cert1')">
+  <div class="cert-img cert-img-1">
+    <img src="assets/core java .jpeg" alt="Core Java Programming Certificate">
+  </div>
+
+  <div class="cert-body">
+    <h4 class="cert-title">Core Java Programming</h4>
+    <p class="cert-platform"><i class="fas fa-certificate"></i> Coursera - Learn Quest</p>
+    <span class="cert-year">2024</span>
+  </div>
+
+  <div class="cert-hover-overlay">
+    <i class="fas fa-search-plus"></i> View Certificate
+  </div>
+</div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="150" onclick="openModal('cert2')">
+          <div class="cert-img cert-img-2">
+            <img src="assets/Intro (AI).jpeg" alt="Introduction to Artificial Intelligence Certificate">
+          </div>
+          <div class="cert-body">
+            <h4 class="cert-title">Introduction to Artificial Intelligence</h4>
+            <p class="cert-platform"><i class="fas fa-certificate"></i> Coursera - IBM </p>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="200" onclick="openModal('cert3')">
+          <div class="cert-img cert-img-3">
+            <img src="assets/OCI.jpeg" alt="OCI Foundation Associate Certificate">
+          </div>
+          <div class="cert-body">
+            <h4 class="cert-title">OCI Foundation Associate</h4>
+            <p class="cert-platform"><i class="fas fa-certificate"></i> Oracle </p>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="250" onclick="openModal('cert4')">
+          <div class="cert-img cert-img-4">
+            <img src="assets/PL-300.jpeg" alt="Power Bi Data Analyst Associate (PL-300) Certificate">
+          </div>
+          <div class="cert-body">
+            <h4 class="cert-title">Power Bi Data Analyst Associate (PL-300) </h4>
+            <p class="cert-platform"><i class="fas fa-certificate"></i> Microsoft</p>
+            <span class="cert-year">2026</span>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="300" onclick="openModal('cert5')">
+          <div class="cert-img cert-img-5">
+            <img src="assets/NPTEL - DA.jpeg" alt="Data Analytics with Python Certificate">
+          </div>
+          <div class="cert-body">
+            <h4 class="cert-title">Data Analytics with Python </h4>
+            <p class="cert-platform"><i class="fas fa-certificate"></i> NPTEL</p>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="350" onclick="openModal('cert6')">
+          <div class="cert-img cert-img-6">
+            <img src="assets/NPTEL - CC.jpeg" alt="Cloud Computing Certificate">
+          </div>
+          <div class="cert-body">
+            <h4 class="cert-title">Cloud Computing</h4>
+            <p class="cert-platform"><i class="fas fa-certificate"></i> NPTEL</p>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="400" onclick="openModal('cert7')">
+          <div class="cert-img cert-img-7">
+            <img src="assets/AI intern.jpeg" alt="AI Intern Certificate">
+          </div>
+          <div class="cert-body">
+            <h4 class="cert-title">AI Intern</h4>
+            <p class="cert-platform"><i class="fas fa-certificate"></i> YHills </p>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="450" onclick="openModal('cert8')">
+          <div class="cert-img cert-img-8">
+            <img src="assets/celoni Process Mining.jpeg" alt="Celonis Process Mining Certificate">
+          </div>
+          <div class="cert-body">
+            <h4 class="cert-title">Celonis Process Mining</h4>
+            <p class="cert-platform"><i class="fas fa-certificate"></i> Celonis </p>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="500" onclick="openModal('cert9')">
+          <div class="cert-img cert-img-9">
+            <img src="assets/GWC Internship completion.jpeg" alt="GWC Internship Completion Certificate">
+          </div>
+          <div class="cert-body">
+            <h4 class="cert-title">GWC Internship Completion</h4>
+            <p class="cert-platform"><i class="fas fa-certificate"></i> GWC Data.Ai</p>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View Certificate</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Modal -->
+  <div class="modal-overlay" id="certModal" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-cert-preview" id="modalContent">
+        <img id="modalImage" class="modal-cert-image" alt="Certificate Preview" />
+        <div class="modal-cert-icon" id="modalIcon"></div>
+        <h3 id="modalTitle"></h3>
+        <p id="modalPlatform"></p>
+        <span id="modalYear" class="cert-year"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="contact-heading">Let's Build Something <span class="accent">Together</span></h3>
+          <p class="contact-para">Whether it's a project, an internship, or just a technical discussion — I'm always open to new connections and conversations. Drop a message and I'll get back to you!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="ci-label">Email</span>
+                <a href="mailto:rsutherson800@gmail.com" class="ci-value">rsutherson800@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="ci-label">Location</span>
+                <span class="ci-value">Thisaiyanvilai, Tamil Nadu, India</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <span class="ci-label">Response Time</span>
+                <span class="ci-value">Within 24 hours</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:rsutherson800@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-area" data-aos="fade-left" data-aos-delay="200">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me something..." required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary full-width" id="submitBtn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo footer-logo">SR<span class="accent">.</span></a>
+          <p class="footer-tagline">Building code with purpose,<br>solving problems with passion.</p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/suthersonr" target="_blank" class="social-icon sm"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Suther2005" target="_blank" class="social-icon sm"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/call_me_sutherson" target="_blank" class="social-icon sm"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:rsutherson800@gmail.com" class="social-icon sm"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Sections</h5>
+          <ul>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Contact Info</h5>
+          <ul>
+            <li><i class="fas fa-envelope"></i> rsutherson800@gmail.com</li>
+            <li><i class="fas fa-map-pin"></i> Thisaiyanvilai, Tamil Nadu, India</li>
+            <li><i class="fas fa-graduation-cap"></i> KSR Institute for Engineering & Technology</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 <span class="accent">SUTHERSON R</span>. Crafted with <i class="fas fa-heart accent-icon"></i> in Tamil Nadu.</p>
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
