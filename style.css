@@ -247,9 +247,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .hero-name {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(2rem,8vw,4.8rem); font-weight: 800;
-  line-height: 1.0; letter-spacing: -2px; color: var(--text);
+  font-size: clamp(1.8rem,6vw,3.8rem); font-weight: 800;
+  line-height: 1.1; letter-spacing: -1px; color: var(--text);
   margin-bottom: 12px; word-break: break-word;
+  display: block;
+  white-space: nowrap;
+}
+.hero-name .accent {
+  color: var(--accent);
 }
 .hero-title { font-size: clamp(0.92rem,3vw,1.15rem); color: var(--text-2); margin-bottom: 14px; font-weight: 400; min-height: 1.6em; }
 .typed-text { color: var(--accent); font-weight: 600; }
