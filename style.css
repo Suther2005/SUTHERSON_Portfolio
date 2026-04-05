@@ -79,6 +79,11 @@ body {
   transition: background 0.4s ease, color 0.4s ease;
 }
 
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
@@ -224,6 +229,10 @@ body {
   color: var(--text);
   text-decoration: none;
   letter-spacing: -1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 130px);
 }
 .nav-links {
   display: flex; gap: 8px;
@@ -1210,7 +1219,11 @@ body {
 }
 
 @media (max-width: 900px) {
+  .section { padding: 84px 0; }
+
   .hero-content { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+  .hero-name { font-size: clamp(2rem, 8vw, 3rem); letter-spacing: -1px; }
+  .hero-tagline { font-size: 1rem; line-height: 1.65; }
   .hero-image-area { order: -1; }
   .hero-img-wrapper { width: 260px; height: 260px; margin: 0 auto; }
   .hero-btns { justify-content: center; }
@@ -1250,21 +1263,32 @@ body {
     transform: translateY(-110%);
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 999;
+    max-height: calc(100vh - var(--nav-h));
+    overflow-y: auto;
   }
   .nav-links.open { transform: translateY(0); }
-  .navbar { padding: 0 20px; }
+  .navbar { padding: 0 16px; }
+  .nav-logo { font-size: 1.15rem; max-width: calc(100% - 110px); }
+  .theme-toggle { width: 36px; height: 36px; }
   .hamburger { display: flex; }
 
   .section { padding: 70px 0; }
   .section-header { margin-bottom: 40px; }
+  .container { padding: 0 18px; }
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .certs-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 24px; }
 }
 
 @media (max-width: 480px) {
+  .nav-logo { font-size: 1rem; max-width: calc(100% - 100px); }
+  .hero-name { font-size: clamp(1.75rem, 9vw, 2.4rem); }
+  .hero-title { font-size: 0.95rem; }
+  .hero-tagline { font-size: 0.94rem; }
+
   .hero-btns { flex-direction: column; align-items: center; }
-  .about-stats { grid-template-columns: repeat(3, 1fr); }
+  .hero-btns .btn { width: 100%; justify-content: center; }
+  .about-stats { grid-template-columns: repeat(2, 1fr); }
   .skills-grid { grid-template-columns: 1fr; }
   .contact-form-area { padding: 24px; }
   .tl-header { flex-direction: column; }
