@@ -134,10 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedEl = document.getElementById('typedText');
   const phrases = [
     'CSE Student',
-    'Java Developer',
     'Problem Solver',
-    'Machine Learning Enthusiast',
-    'Full-Stack Developer',
+    'Data Analyst',
   ];
   let phraseIndex = 0, charIndex = 0, isDeleting = false;
 
@@ -229,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cert4: { icon: '<i class="fas fa-database"></i>', title: 'Power Bi Data Analyst Associate (PL-300)', platform: 'Microsoft', year: '2026', image: 'assets/PL-300.jpeg' },
     cert5: { icon: '<i class="fas fa-code-branch"></i>', title: 'Data Analytics with Python', platform: 'NPTEL', year: '2025', image: 'assets/NPTEL - DA.jpeg' },
     cert6: { icon: '<i class="fas fa-network-wired"></i>', title: 'Cloud Computing', platform: 'NPTEL', year: '2025', image: 'assets/NPTEL - CC.jpeg' },
-    cert7: { icon: '<i class="fas fa-robot"></i>', title: 'AI Intern', platform: 'Internship Certificate', year: '2025', image: 'assets/AI intern.jpeg' },
+    cert7: { icon: '<i class="fas fa-chart-line"></i>', title: 'Tableau Data Analytics', platform: 'Tableau', year: '2026', image: 'assets/tableu.jpeg' },
     cert8: { icon: '<i class="fas fa-industry"></i>', title: 'Celonis Process Mining', platform: 'Celonis', year: '2025', image: 'assets/celoni Process Mining.jpeg' },
     cert9: { icon: '<i class="fas fa-briefcase"></i>', title: 'GWC Internship Completion', platform: 'GWC Data.Ai', year: '2025', image: 'assets/GWC Internship completion.jpeg' },
   };
