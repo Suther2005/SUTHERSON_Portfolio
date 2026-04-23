@@ -16,33 +16,47 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.body.style.overflow = 'hidden';
 
+  /* ===== CURSOR GLOW ===== */
+  const cursorGlow = document.getElementById('cursorGlow');
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-  /* ===== CUSTOM CURSOR ===== */
-  const dot  = document.getElementById('cursorDot');
-  const ring = document.getElementById('cursorRing');
-  let ringX = 0, ringY = 0, dotX = 0, dotY = 0;
+  if (cursorGlow && finePointer) {
+    let targetX = window.innerWidth / 2;
+    let targetY = window.innerHeight / 2;
+    let currentX = targetX;
+    let currentY = targetY;
 
-  document.addEventListener('mousemove', (e) => {
-    dotX = e.clientX; dotY = e.clientY;
-    dot.style.left  = dotX + 'px';
-    dot.style.top   = dotY + 'px';
-  });
+    cursorGlow.classList.add('active');
 
-  function animateRing() {
-    ringX += (dotX - ringX) * 0.12;
-    ringY += (dotY - ringY) * 0.12;
-    ring.style.left = ringX + 'px';
-    ring.style.top  = ringY + 'px';
-    requestAnimationFrame(animateRing);
+    document.addEventListener('mousemove', (e) => {
+      targetX = e.clientX;
+      targetY = e.clientY;
+    });
+
+    const hoverables = document.querySelectorAll('a, button, .skill-card, .project-card, .cert-card, .timeline-card');
+    hoverables.forEach((el) => {
+      el.addEventListener('mouseenter', () => cursorGlow.classList.add('hovered'));
+      el.addEventListener('mouseleave', () => cursorGlow.classList.remove('hovered'));
+    });
+
+    function animateGlow() {
+      currentX += (targetX - currentX) * 0.18;
+      currentY += (targetY - currentY) * 0.18;
+      cursorGlow.style.left = currentX + 'px';
+      cursorGlow.style.top = currentY + 'px';
+      requestAnimationFrame(animateGlow);
+    }
+
+    animateGlow();
+
+    window.addEventListener('blur', () => {
+      cursorGlow.style.opacity = '0';
+    });
+
+    window.addEventListener('focus', () => {
+      cursorGlow.style.opacity = '';
+    });
   }
-  animateRing();
-
-  const hoverables = document.querySelectorAll('a, button, .skill-card, .cert-card, .project-card');
-  hoverables.forEach(el => {
-    el.addEventListener('mouseenter', () => ring.classList.add('hovered'));
-    el.addEventListener('mouseleave', () => ring.classList.remove('hovered'));
-  });
-
 
   /* ===== AOS INIT ===== */
   AOS.init({
@@ -325,19 +339,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-
-  /* ===== PARALLAX ON HERO BLOBS ===== */
-  const blobs = document.querySelectorAll('.blob');
-  document.addEventListener('mousemove', (e) => {
-    const xRatio = (e.clientX / window.innerWidth  - 0.5) * 2;
-    const yRatio = (e.clientY / window.innerHeight - 0.5) * 2;
-    blobs.forEach((blob, i) => {
-      const factor = (i + 1) * 12;
-      blob.style.transform = `translate(${xRatio * factor}px, ${yRatio * factor}px)`;
-    });
-  });
-
 
   /* ===== NUMBER COUNTER ANIMATION ===== */
   function animateCounter(el, target) {
